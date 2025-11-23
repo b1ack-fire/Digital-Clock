@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background: #0d1117;
+  color: #ffffff;
+}
+
+/* Clock */
+.clock-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#time {
+  font-size: 3.5rem;
+}
+#date, #day {
+  font-size: 1.5rem;
+}
+
+/* Controls */
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.controls input {
+  padding: 8px;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+/* Toggle Switch */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.switch {
+  width: 60px;
+  height: 30px;
+  background: #444;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  transition: 0.4s;
+}
+
+.sun, .moon {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+#toggle {
+  display: none;
+}
+
+.switch::after {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+#toggle:checked + .switch::after {
+  left: 32px;
+}
+
+#toggle:checked + .switch {
+  background: #222;
+}
