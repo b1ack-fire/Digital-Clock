@@ -11,7 +11,7 @@ toggle.addEventListener("change", () => {
   }
 });
 
-// Clock
+
 function updateClock() {
   const now = new Date();
 
@@ -37,7 +37,7 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-// Alarm
+
 let alarmTime = null;
 
 function setAlarm() {
@@ -45,7 +45,7 @@ function setAlarm() {
   alert("Alarm set for " + alarmTime);
 }
 
-// Use any YouTube → MP3 CDN link
+
 document.getElementById("alarmSound").src =
   "https://dl.meloboom.com/medialink/190950"; // ringtone
 
@@ -62,7 +62,7 @@ setInterval(() => {
   }
 }, 1000);
 
-// Timer
+
 let timerInterval;
 
 function startTimer() {
