@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="switch">
+      <span class="sun">☀️</span>
+      <span class="moon">🌙</span>
+    </label>
+  </div>
+
+  <!-- Clock -->
+  <div class="clock-container">
+    <h1 id="time"></h1>
+    <p id="date"></p>
+    <p id="day"></p>
+  </div>
+
+  <!-- Alarm + Timer -->
+  <div class="controls">
+    <h2>Set Alarm</h2>
+    <input type="time" id="alarmTime">
+    <button onclick="setAlarm()">Set Alarm</button>
+
+    <h2>Set Timer</h2>
+    <input type="number" id="timerInput" placeholder="Seconds">
+    <button onclick="startTimer()">Start Timer</button>
+
+    <h3 id="timerDisplay"></h3>
+  </div>
+
+  <audio id="alarmSound" src="" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
