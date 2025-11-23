@@ -44,20 +44,3 @@ Smooth animated slide-switch
 
 The switch changes appearance (sun and moon icons) depending on the mode
 
-Project Structure
-/digital-clock
-│── index.html
-│── style.css
-│── script.js
-└── README.md
-
-How to Run
-
-Download or clone the repository:
-
-git clone https://github.com/yourusername/digital-clock.git
-
-
-Open the project folder.
-
-Launch index.html in any modern browser.
